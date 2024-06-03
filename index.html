@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Invoice Creator</title>
+    </head>
+    <body>
+        <div class="body-container">
+            <header>
+                <div class="toggler">
+                    <p class="toggler--light">Light</p>
+                    <div class="toggler--slider">
+                        <div class="toggler--circle"></div>
+                    </div>
+                    <p class="toggler--dark">Dark</p>
+                </div>
+                <div class="header-title">
+                    <h1>Invoice creator</h1>
+                    <h2>Thanks for choosing GoodCorp, LLC!</h2>
+                </div>
+            </header>
+            <main>
+                <form>
+                    <input type="text" placeholder="Enter task">
+                    <select>
+                        <option value="0">$0</option>
+                        <option value="10">$10</option>
+                        <option value="20">$20</option>
+                        <option value="30">$30</option>
+                        <option value="40">$40</option>
+                        <option value="50">$50</option>
+                    </select>
+                    <button class="submit-button"><i class="fa-solid fa-plus"></i></button>
+                </form>
+                <section>
+                    <div class="main--tasks-container">
+                        <div class="main--tasks-header">
+                            <h3>Task</h3>
+                            <h3>Total</h3>
+                        </div>
+                        <div class="main--tasks">
+                            <div>
+                                <div class="main--task" id="main--task"></div>
+                            </div>
+                            <div>
+                                <div class="main--total" id="main--total"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="main--notes-total">
+                        <div>
+                            <h3>Notes</h3>
+                            <p class="main--note">We accept cash, credit card, or PayPal</p>
+                        </div>
+                        <div>
+                            <h3>Total amount</h3>
+                            <p id="main--total-amount" class="main--total-amount"></p>
+                        </div>
+                    </div>
+                    <button class="send-button" id="send-button"><i class="fa-solid fa-envelope"></i> Send Invoice</button>
+                </section>
+            </main>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
